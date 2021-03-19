@@ -1,0 +1,32 @@
+SD-Edge (Software Defined Edge) : Firewalls, Routing, Switching, WAN, DIA
+SD-DC/Cloud Networking :(Software Defined Datacenter) : Firewalls, LB , Routing, Switching, DCI/WAN, ISP
+WAN
+Wireless
+
+
+Focus areas:
+============
+ 
+:Software Defined Networking - SDN controller for SDDC, Cloud and Edge
+:Network Measurement, Network Analytics - Network measurement, monitoring platform, traffic anomalies detection, MI driven decision making
+:Network Modeling & Verification - intent-based networking.Topology modeling and verification for packet reachability analysis.
+:High Performance and Secure Data Plane  - next generation cloud virtual network data plane
+:Congestion Control, Quality of Service and Traffic Management - state-of-art congestion control and traffic management schemes, over the WAN and in datacenters, to enable high performance as well as isolation across multiple tenants.
+:WAN Design,Optical networking  - high performance, reliable, fault-tolerant, and cheap data-driven WAN designs, for connectivity from the data center edge to the Internet, providing support from L3 connectivity to various cloud-level products. 
+We’ve developed one of the world’s largest, most cost-effective wide area networks, and we continue to increase its scale and reliability, while extracting the best possible performance from WAN hardware and fiber link
+:Data-center network design - designs for scalable, fast, cheap, reliable, and evolvable data-center networks
+:High velocity development and testing - automation in all aspects of testing and qualification, and we build powerful infrastructure for testing, debugging, and root-causing, in both physical and emulated testbeds 
+:Programmable packet processing - We’re developing new mechanisms for low-latency, CPU-efficient communication
+:Data Mining and Telemetry - We collect traffic statistics all around our network infrastructure to track performance, detect quickly unusual events, and compute SLA compliance. We rely on the most advanced data science techniques, machine learning in particular, to reduce the time it takes to detect and root cause events. 
+We use predictive analytics to anticipate some types of problems and adjust our traffic engineering (e.g. traffic surge), or to plan capacity increase. 
+:
+
+
+Network Engineering : NFV (Network Function Virtualization), Software Defined Networking, Container Networking, Cloud Networking, WAN ; Wireless (maybe, may not) ,  Network as Code for Self Service/Orchestration capabilities.
+
+
+
+Overall skills: 
+===============
+
+: NaC : Network Infrastcructure as Code

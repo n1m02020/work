@@ -1,0 +1,128 @@
+Python install for windows : 
+=============================
+
+https://www.youtube.com/watch?v=UvcQlPZ8ecA
+https://www.youtube.com/watch?v=Qi28uPKaH_A
+https://www.youtube.com/watch?v=IDo_Gsv3KVk
+
+
+Get pip for Python and Install Netmiko and Paramiko:
+=====================================================
+
+https://bootstrap.pypa.io/get-pip.py
+https://www.youtube.com/watch?v=N-CUmT8qtVM
+
+
+
+
+
+
+Using Visual Studio text editor:
+=================================
+
+https://www.youtube.com/watch?v=E9U-EBG8jVk  
+https://www.youtube.com/watch?v=dNFgRUD2w68
+
+Use Python debugger as well....
+
+https://www.youtube.com/watch?v=Fk12ELJ9Bww&t=328s
+
+Git integrations ^^^^
+
+https://www.youtube.com/watch?v=Fk12ELJ9Bww&t=33s    ---- > very comprehensive
+https://www.youtube.com/watch?v=F2DBSH2VoHQ
+https://www.youtube.com/watch?v=wMqukSKYcvU&t=3s
+https://www.youtube.com/watch?v=3Tn58KQvWtU
+https://www.youtube.com/watch?v=XIlxdG6bGU0
+https://www.youtube.com/watch?v=AKVRkB0fot0
+
+https://code.visualstudio.com/docs/editor/versioncontrol
+
+https://github.com/n1m02020/work.git
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Success!
+Authorization was successful. You will be redirected back to Visual Studio Code
+
+Didn't work?
+If you aren't redirected, you can add the token manually.
+
+Your authorization token:
+vscode://vscode.github-authentication/did-authenticate?windowid=1&code=e7b2d0d9bc0572d943f5&state=70debd51-5504-4cb7-b7aa-f14cb42668fd
+? Copied
+Copy the token.
+Switch back to VS code.
+Click Signing in to github.com... in the status bar.
+Paste the token and hit enter.
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Using Atom text editor:
+========================
+
+https://www.youtube.com/watch?v=RwwVthReQq0
+
+
+SublimeText editor:
+====================
+
+
+Setup Atom IDE for Python
+============================
+
+https://www.youtube.com/watch?v=Ei-G0fEOu9I&t=2s
+
+
+
+
+install script, python debugger and platformio-ide-terminal package in atom
+
+ctrl+shift+p
+
+ctrl+shift+b ====run python script with "Script"
+
+
+
+How to create a python program in windows and from Python Shell (IDLE and Command Prompt): 
+===========================================================================================
+
+https://www.youtube.com/watch?v=Qi28uPKaH_A&t=247s
+
+https://www.youtube.com/watch?v=EYpOPmFPecs
+
+
+
+
+Python IDE options:
+===================
+
+https://www.jetbrains.com/pycharm/
+
+
+
+Pip install of iPython and pycharm:
+====================================
+
+https://www.youtube.com/watch?v=mkWI6U6i1i0
+
+https://www.youtube.com/watch?v=395BLGo0yGM
+
+
+TextFSM:
+========
+
+
+
+Master branch... private access vs read-only. 
+
+
+
+
+https://gitlab.com/groups/heb-engineering/teams/ops/netops/-/activity
+https://gitlab.com/heb-engineering/teams/ops/netops
+
+
+
+
+
+
+

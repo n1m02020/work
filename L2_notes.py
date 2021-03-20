@@ -319,3 +319,257 @@
 
 #In [49]: my_list
 #Out[49]: [55, 5, 4.0, 'how are you', 'adding more to the end']
+
+####################################################################################
+
+#In [51]: f = open("showversion.txt")
+#In [52]: output = f.readlines()
+
+#In [53]: type(output)
+#Out[53]: list
+
+#In [54]: len(output)
+#Out[54]: 39       ; 39 elements in list output
+
+
+#In [55]: output[0:5]       ; list slices from existing lust , give me element 0 upto 4 for list output
+#Out[55]: 
+#['Cisco Nexus Operating System (NX-OS) Software\n',
+# 'TAC support: http://www.cisco.com/tac\n',
+# 'Copyright (c) 2002-2010, Cisco Systems, Inc. All rights reserved.\n',
+# 'The copyrights to certain works contained herein are owned by\n',
+# 'other third parties and are used and distributed under license.\n']
+
+#In [56]: output[:5] ; starts at the very beginning of your list, upto element 5, doesnt include element 5
+#Out[56]: 
+#['Cisco Nexus Operating System (NX-OS) Software\n',
+# 'TAC support: http://www.cisco.com/tac\n',
+# 'Copyright (c) 2002-2010, Cisco Systems, Inc. All rights reserved.\n',
+# 'The copyrights to certain works contained herein are owned by\n',
+# 'other third parties and are used and distributed under license.\n']
+
+#In [57]: output[:]   ; beginning all the way up to the end of the list 
+
+
+#In [58]: output [33:]     ; starts at 33rd element all the way till the end of list 
+#Out[58]: 
+#['System version:\n',
+# 'Service:\n',
+#' \n',
+# 'plugin\n',
+# 'Core Plugin, Ethernet Plugin, Fc Plugin\n',
+# 'switch#']
+
+#In [59]: output[33:38]  ; index 33rd through index 37 
+
+
+#In [61]: output[36:-1]   ; 36 through last index of list
+#Out[61]: ['plugin\n', 'Core Plugin, Ethernet Plugin, Fc Plugin\n']
+
+
+#In [66]: output[-3: -1]    ; -3 through the very end of the list
+#Out[66]: ['plugin\n', 'Core Plugin, Ethernet Plugin, Fc Plugin\n']
+
+#In [67]: output[-3:] ; -3 through end
+#Out[67]: ['plugin\n', 'Core Plugin, Ethernet Plugin, Fc Plugin\n', 'switch#']
+
+###########################################################################
+
+# lists and dictionaries(covered later) are mutable, in this case we append to it and retain the same id, even though we have changed what the list is
+
+#In [68]: my_list = ['hello', 'whatever']
+
+#In [69]: id(my_list)
+#Out[69]: 2539991706048
+
+#In [71]: your_list = my_list
+
+#In [72]: id(your_list)
+#Out[72]: 2539991706048
+
+#In [73]: your_list.append('whatever')
+
+#In [74]: your_list
+#Out[74]: ['hello', 'whatever', 'whatever']
+
+#In [75]: my_list
+#Out[75]: ['hello', 'whatever', 'whatever']
+
+#In [76]: my_list == your_list
+#Out[76]: True
+
+#In [77]: your_list == my_list
+#Out[77]: True
+
+#In [78]: my_list.append(22)
+
+#In [79]: id(my_list)
+#Out[79]: 2539991706048
+
+#In [80]: my_list
+#Out[80]: ['hello', 'whatever', 'whatever', 22]
+
+#In [81]: your_list
+#Out[81]: ['hello', 'whatever', 'whatever', 22]
+
+
+#This is NOT the case with strings and numbers, integers, strings cant be modified, not mutable
+
+
+#In [83]: my_str = 'hello'
+
+#In [84]: id(my_str)
+#Out[84]: 2539993776816
+
+#In [85]: 
+
+#In [85]: my_str[0] = 'a'                  ; we cant just give the 1st index for string a new value
+#---------------------------------------------------------------------------
+#TypeError                                 Traceback (most recent call last)
+#<ipython-input-85-4dacfc717de8> in <module>
+#----> 1 my_str[0] = 'a'
+
+#TypeError: 'str' object does not support item assignment
+
+#In [86]: my_str = 'welcome'     
+
+#In [87]: id(my_str) 
+#Out[87]: 2539995466224      ; with value changing the identifier for strings change. Strings are immutable, you can change which object the memory looks, change what this object points at, but you cant modify the string
+
+
+# you have to be careful while creating copies of lists and dictonaries as they are MUTABLE
+
+##################################################################################################################
+
+# TUPLES are list you CANNOT MODIFY  ; you use paranthesis () and not square backets [] . TUPLES use () and LISTS use [] 
+# Why TUPLES ? ANDY WHAT CAN I DO WITH THEM   : you'll see in other peoples code, you can do all standard list operations...YOU CANNOT MODIFY TUPLES.. TUPLES are LISTS THAT CANNOT BE MODIFIED!!!!!
+
+#In [92]: my_tuple = (2.0, 'hi', 44)
+
+#In [93]: type(my_tuple)
+#Out[93]: tuple
+
+#In [94]: my_tuple[0]
+#Out[94]: 2.0
+
+#In [95]: my_tuple[1]
+#Out[95]: 'hi'
+
+#In [96]: my_tuple[3]
+#---------------------------------------------------------------------------
+#IndexError                                Traceback (most recent call last)
+#<ipython-input-96-e7855cec9b3c> in <module>
+#----> 1 my_tuple[3]
+
+#IndexError: tuple index out of range
+
+#In [97]: my_tuple[2]
+#Out[97]: 44
+
+#In [98]: my_tuple[-1]
+#Out[98]: 44
+
+#In [99]: my_tuple[-2]
+#Out[99]: 'hi'
+
+
+#In [100]: my_tuple[0] = 'hello'
+#---------------------------------------------------------------------------
+#TypeError                                 Traceback (most recent call last)
+#<ipython-input-100-ecf9a3ec8865> in <module>
+#----> 1 my_tuple[0] = 'hello'
+
+#TypeError: 'tuple' object does not support item assignment
+
+#In [101]: my_tuple.append('something')
+#---------------------------------------------------------------------------
+#AttributeError                            Traceback (most recent call last)
+#<ipython-input-101-ac720640e676> in <module>
+#----> 1 my_tuple.append('something')
+
+#AttributeError: 'tuple' object has no attribute 'append'
+
+#In [103]: my_tuple.extend((1, 2))
+#---------------------------------------------------------------------------
+#AttributeError                            Traceback (most recent call last)
+#<ipython-input-103-3d9dd6379787> in <module>
+#----> 1 my_tuple.extend((1, 2))
+
+#AttributeError: 'tuple' object has no attribute 'extend'
+
+
+#In [104]: my_tuple                    ; if you decided to CONVERT A TUPLE TO LIST at some point!!!!!
+#Out[104]: (2.0, 'hi', 44)
+
+#In [105]: my_var = list(my_tuple)
+
+#In [106]: type(my_var)
+#Out[106]: list
+
+
+#############################################################################################################################
+
+# Python JOIN operation
+
+#In [107]: ipv6_addr = '2001:0db8:85a3:0000:0000:8a2e:0370:7334'#
+
+#In [108]: ipv6_addr.split(":")
+#Out[108]: ['2001', '0db8', '85a3', '0000', '0000', '8a2e', '0370', '7334']
+
+#In [109]: 
+
+#In [109]: works = ipv6_addr.split(":")
+
+#In [110]: type(works)
+#Out[110]: list
+
+#In [112]: works
+#Out[112]: ['2001', '0db8', '85a3', '0000', '0000', '8a2e', '0370', '7334']
+
+
+
+#In [112]: ":".join(works)   ; create a string :, call join method and then pass in works list ; I am passing the : seperator, join operation is a STRING Method, that has to operate on a string here : , we pass list, join operation will insert this : in between each of these elements of the string
+#Out[113]: '2001:0db8:85a3:0000:0000:8a2e:0370:7334'
+
+#In [114]: ":::".join(works)
+#Out[114]: '2001:::0db8:::85a3:::0000:::0000:::8a2e:::0370:::7334'
+
+#In [115]: "---".join(works)
+#Out[115]: '2001---0db8---85a3---0000---0000---8a2e---0370---7334'
+
+
+#In [116]: ip1 = '192.168.12.12'   ; Another example
+#In [117]: ip1.split(".")
+#Out[117]: ['192', '168', '12', '12']
+
+#In [118]: my_ip = ip1.split(".")
+#In [119]: my_ip
+#Out[119]: ['192', '168', '12', '12']
+
+#In [120]: ".". join(my_ip)
+#Out[120]: '192.168.12.12'
+
+#In [121]: "...". join(my_ip)
+#Out[121]: '192...168...12...12'
+
+###########################################################################################################################
+
+#Using Python (sys.argv)    ; arguments keep getting added to python file as list elements; you can use this while constructing pytho scripts, to detect arguments and make different actions based on CLI arguments you passed in; argparse and quick python libraries to pass on arguments available
+# 
+#  PS C:\Users\m660753\Desktop\work> python L2.test2.py
+#['L2.test2.py']
+
+#PS C:\Users\m660753\Desktop\work> cat L2.test2.py
+##!/usr/bin/env python
+#from __future__ import print_function
+#import sys
+#print(sys.argv)
+
+#PS C:\Users\m660753\Desktop\work> python L2.test2.py hello    ; arguments keep getting added as list elements
+#['L2.test2.py', 'hello']
+#PS C:\Users\m660753\Desktop\work> python L2.test2.py hello how r you
+#['L2.test2.py', 'hello', 'how', 'r', 'you']
+
+#####################################################################################################################################
+
+
